@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        _rigidbody.velocity = direction.normalized * speed;
+        _rigidbody.velocity = direction * speed;
 
         _animator.speed = direction == Vector2.zero ? 0 : 1;
 

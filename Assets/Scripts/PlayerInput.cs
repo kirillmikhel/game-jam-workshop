@@ -19,6 +19,6 @@ public class PlayerInput : MonoBehaviour
 
         Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        _movement.Move(direction);
+        _movement.Move(direction.normalized);
     }
 }
