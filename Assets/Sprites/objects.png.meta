@@ -475,7 +475,7 @@ TextureImporter:
       name: hp_100
       rect:
         serializedVersion: 2
-        x: 64
+        x: 63
         y: 304
         width: 16
         height: 16
@@ -495,7 +495,7 @@ TextureImporter:
       name: hp_75
       rect:
         serializedVersion: 2
-        x: 80
+        x: 79
         y: 304
         width: 16
         height: 16
@@ -515,7 +515,7 @@ TextureImporter:
       name: hp_50
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 304
         width: 16
         height: 16
@@ -535,7 +535,7 @@ TextureImporter:
       name: hp_25
       rect:
         serializedVersion: 2
-        x: 112
+        x: 111
         y: 304
         width: 16
         height: 16
@@ -555,7 +555,7 @@ TextureImporter:
       name: hp_0
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 304
         width: 16
         height: 16
