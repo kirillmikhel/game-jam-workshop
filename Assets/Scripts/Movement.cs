@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     {
         _rigidbody.velocity = direction * speed;
 
-        _animator.speed = direction == Vector2.zero ? 0 : 1;
+        //_animator.speed = direction == Vector2.zero ? 0 : 1;
 
         _animator.SetFloat("Walk right", direction.x);
         _animator.SetFloat("Walk left", -direction.x);

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7152685295226962939}
   - component: {fileID: 5397163037251865961}
+  - component: {fileID: 1572354399}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -45,3 +46,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   isGameOn: 0
+--- !u!114 &1572354399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580073353717184955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69e27f7dd9334d49a4cd96a430e764b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCollectClip: {fileID: 8300000, guid: e39f97d8bec724403801d4eefd9de046, type: 3}
+  healthCollectClip: {fileID: 8300000, guid: 8d350fbc3d1004a63b069eb6874bc587, type: 3}
+  hitCollectClip: {fileID: 8300000, guid: 858753b1599134568ad65341739e50bc, type: 3}
+  swingCollectClip: {fileID: 8300000, guid: f328ad148cacf4d148e7f9c2e61d9567, type: 3}
+  coinCollectSource: {fileID: 0}
+  healthCollectSource: {fileID: 0}
+  hitCollectSource: {fileID: 0}
+  swingCollectSource: {fileID: 0}

@@ -5,20 +5,38 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     private Movement _movement;
+    private PlayerAttack _playerAttack;
 
     // Start is called before the first frame update
     void Start()
     {
         _movement = GetComponent<Movement>();
+        _playerAttack = GetComponent<PlayerAttack>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ListenForDirections();
+        ListenForAttack();
+    }
+
+    private void ListenForDirections()
+    {
         if (!_movement) return;
 
-        Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        var direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         _movement.Move(direction.normalized);
+    }
+
+    private void ListenForAttack()
+    {
+        if (!_playerAttack) return;
+
+        if (Input.GetAxisRaw("Attack") == 1)
+        {
+            _playerAttack.DoAttack();
+        }
     }
 }

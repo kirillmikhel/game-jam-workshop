@@ -18,7 +18,7 @@ public class Patrol : MonoBehaviour
 
     private IEnumerator DoPatrol()
     {
-        Vector2 direction = vertical ? Vector2.up : Vector2.left;
+        var direction = vertical ? Vector2.up : Vector2.left;
 
         while (true)
         {

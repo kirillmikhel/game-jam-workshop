@@ -11,7 +11,5 @@ public class Dropper : MonoBehaviour
         var randomPrefab = prefabs[Random.Range(0, prefabs.Length)];
 
         var droppedItem = Instantiate(randomPrefab, transform.position, Quaternion.identity);
-
-        //droppedItem.transform.SetParent(null);
     }
 }
