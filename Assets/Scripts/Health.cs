@@ -11,4 +11,14 @@ public class Health : MonoBehaviour
     {
         HP = Mathf.Min(maxHP, HP + 1);
     }
+
+    public void ReceiveDamage(int damage)
+    {
+        HP = Mathf.Max(HP - damage, 0);
+
+        if (HP > 0) return;
+        
+        GetComponent<Dropper>()?.Drop();
+        Destroy(gameObject);
+    }
 }
