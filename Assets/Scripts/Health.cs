@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int HP = 6;
-    public int maxHP = 6;
+    public int HP = 1;
+    public int maxHP = 1;
 
     public void Increment()
     {
@@ -17,9 +17,9 @@ public class Health : MonoBehaviour
         HP = Mathf.Max(HP - damage, 0);
 
         GameManager.Instance.GetComponent<SoundController>().hitCollectSource.Play();
-            
+
         if (HP > 0) return;
-        
+
         GetComponent<Dropper>()?.Drop();
         Destroy(gameObject);
     }
