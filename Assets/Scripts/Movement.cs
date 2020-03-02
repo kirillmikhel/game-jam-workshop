@@ -22,9 +22,7 @@ public class Movement : MonoBehaviour
 
         //_animator.speed = direction == Vector2.zero ? 0 : 1;
 
-        _animator.SetFloat("Walk right", direction.x);
-        _animator.SetFloat("Walk left", -direction.x);
-        _animator.SetFloat("Walk up", direction.y);
-        _animator.SetFloat("Walk down", -direction.y);
+        _animator.SetFloat("Horizontal Velocity", direction.x);
+        _animator.SetFloat("Vertical Velocity", direction.y);
     }
 }
