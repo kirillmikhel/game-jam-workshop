@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 7243237210886168932}
   - component: {fileID: 7243237210886168931}
   - component: {fileID: 7243237210886168956}
-  - component: {fileID: 7243237210886168957}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -53,6 +52,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -64,6 +64,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -168,8 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c387091b1d61a40d9959c6742df6aea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
-  maxHP: 2
+  HP: 1
+  maxHP: 1
 --- !u!114 &7243237210886168931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,17 +198,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   cooldown: 1
---- !u!114 &7243237210886168957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7243237210886168939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a7375bfc22840f498d81daf54c7af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 890385900692172747, guid: 916d2a144296e4d9dbdbd1d8af904150, type: 3}
