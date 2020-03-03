@@ -22,7 +22,11 @@ public class Movement : MonoBehaviour
 
         //_animator.speed = direction == Vector2.zero ? 0 : 1;
 
-        _animator.SetFloat("Horizontal Velocity", direction.x);
-        _animator.SetFloat("Vertical Velocity", direction.y);
+        _animator.SetFloat("Velocity", direction.magnitude);
+
+        if (direction == Vector2.zero) return;
+
+        _animator.SetFloat("Horizontal Direction", direction.x);
+        _animator.SetFloat("Vertical Direction", direction.y);
     }
 }
