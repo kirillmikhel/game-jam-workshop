@@ -17,11 +17,11 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ListenForDirections();
-        ListenForAttack();
+        HandleDirections();
+        HandleAttack();
     }
 
-    private void ListenForDirections()
+    private void HandleDirections()
     {
         if (!_movement) return;
 
@@ -30,7 +30,7 @@ public class PlayerInput : MonoBehaviour
         _movement.Move(direction.normalized);
     }
 
-    private void ListenForAttack()
+    private void HandleAttack()
     {
         if (!_playerAttack) return;
 
