@@ -320,12 +320,12 @@ PrefabInstance:
     - target: {fileID: 7243237210886168930, guid: 72c0d31109d314586bf6dab6ade95a30,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.42
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 7243237210886168930, guid: 72c0d31109d314586bf6dab6ade95a30,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: 4.87
       objectReference: {fileID: 0}
     - target: {fileID: 7243237210886168930, guid: 72c0d31109d314586bf6dab6ade95a30,
         type: 3}
@@ -375,6 +375,26 @@ PrefabInstance:
     - target: {fileID: 7243237210886168931, guid: 72c0d31109d314586bf6dab6ade95a30,
         type: 3}
       propertyPath: vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243237210886168931, guid: 72c0d31109d314586bf6dab6ade95a30,
+        type: 3}
+      propertyPath: inversed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243237210886168931, guid: 72c0d31109d314586bf6dab6ade95a30,
+        type: 3}
+      propertyPath: inverse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243237210886168931, guid: 72c0d31109d314586bf6dab6ade95a30,
+        type: 3}
+      propertyPath: startDirection.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243237210886168931, guid: 72c0d31109d314586bf6dab6ade95a30,
+        type: 3}
+      propertyPath: startDirection.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7243237210886168939, guid: 72c0d31109d314586bf6dab6ade95a30,
@@ -2164,6 +2184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243237210886168931, guid: 72c0d31109d314586bf6dab6ade95a30,
+        type: 3}
+      propertyPath: startDirection.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7243237210886168939, guid: 72c0d31109d314586bf6dab6ade95a30,
         type: 3}
