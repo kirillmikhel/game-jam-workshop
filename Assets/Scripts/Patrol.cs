@@ -30,7 +30,7 @@ public class Patrol : MonoBehaviour
         {
             yield return new WaitForSeconds(2);
 
-            _movement.Move(direction);
+            _movement.Move(direction.normalized);
 
             direction = -direction;
         }
