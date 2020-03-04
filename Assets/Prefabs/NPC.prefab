@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7243237210886168932}
   - component: {fileID: 7243237210886168931}
   - component: {fileID: 7243237210886168956}
+  - component: {fileID: 3320856650661927757}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vertical: 0
+  inverse: 0
 --- !u!114 &7243237210886168956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,3 +200,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   cooldown: 1
+--- !u!114 &3320856650661927757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243237210886168939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657d2cbf2b7b141ffb15f5e44f5c50c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
