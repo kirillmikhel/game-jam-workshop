@@ -27,6 +27,8 @@ public class PlayerInput : MonoBehaviour
 
         var direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        if (_playerAttack.active) direction = Vector2.zero;
+
         _movement.Move(direction.normalized);
     }
 
@@ -36,7 +38,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetAxisRaw("Attack") == 1)
         {
-            _playerAttack.DoAttack();
+            StartCoroutine(_playerAttack.DoAttack());
         }
     }
 }

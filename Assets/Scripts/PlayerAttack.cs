@@ -4,50 +4,35 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public bool active = false;
     public int damage = 1;
-    public float cooldown = 1.0f;
+    public float cooldown = 0.4f;
 
-    private float _currentCooldown = 0;
     private Animator _animator;
-    private CircleCollider2D _circleCollider2D;
+    private CircleCollider2D _attackZone;
 
     // Start is called before the first frame update
     void Start()
     {
         _animator = GetComponent<Animator>();
-        _circleCollider2D = GetComponent<CircleCollider2D>();
+        _attackZone = GetComponent<CircleCollider2D>();
     }
 
-    private void Update()
+    public IEnumerator DoAttack()
     {
-        if (_currentCooldown > 0)
-        {
-            _currentCooldown -= Time.deltaTime;
-        }
-    }
-
-    // Update is called once per frame
-    public void DoAttack()
-    {
-        if (_currentCooldown > 0) return;
+        if (active) yield break;
 
         GameManager.Instance.GetComponent<SoundController>().swingCollectSource.Play();
 
         _animator.SetTrigger("Attack");
-        _animator.speed = 1;
 
-        _currentCooldown = cooldown;
+        active = true;
+        _attackZone.enabled = true;
 
-        StartCoroutine(ActivateAttackZone());
-    }
+        yield return new WaitForSeconds(cooldown);
 
-    private IEnumerator ActivateAttackZone()
-    {
-        _circleCollider2D.enabled = true;
-
-        yield return new WaitForSeconds(0.3f);
-
-        _circleCollider2D.enabled = false;
+        active = false;
+        _attackZone.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
