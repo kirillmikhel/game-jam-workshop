@@ -112,7 +112,7 @@ TextureImporter:
     second: objects_37
   - first:
       213: 21300072
-    second: objects_38
+    second: stone
   - first:
       213: 21300074
     second: objects_39
@@ -1826,7 +1826,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_38
+      name: stone
       rect:
         serializedVersion: 2
         x: 256
