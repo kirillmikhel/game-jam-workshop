@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int score = 0;
-    public bool isGameOn = false;
-
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -23,33 +20,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartTheGame()
+    private void Update()
     {
-        Instance.isGameOn = true;
-
-        SceneManager.LoadScene("Main");
+        if (Input.GetKey(KeyCode.R))
+        {
+            Restart();
+        }
+        else if (Input.GetKey(KeyCode.Escape))
+        {
+            Exit();
+        }
     }
 
-    public void Exit()
+    private void Exit()
     {
         Application.Quit();
     }
 
-    public static void Restart()
+    private static void Restart()
     {
-        Instance.isGameOn = false;
-        SceneManager.LoadScene("Menu");
-    }
-
-    public static void TriggerVictory()
-    {
-        Instance.isGameOn = false;
-        SceneManager.LoadScene("Victory");
-    }
-
-    public static void TriggerGameOver()
-    {
-        Instance.isGameOn = false;
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("Main");
     }
 }
