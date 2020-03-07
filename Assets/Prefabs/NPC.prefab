@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 576399373885738895}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   prefab: {fileID: 5159510740242678790, guid: 9653332c4bf084728841463d7a36a8b6, type: 3}
+  speed: 4
   cooldown: 1
 --- !u!114 &576399373885738895
 MonoBehaviour:
@@ -242,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ce930b11bca48cf928fa6d16383fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  throwingInterval: 1.5
 --- !u!1 &8786837063155099632
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +256,7 @@ GameObject:
   - component: {fileID: 5574299724976328697}
   m_Layer: 0
   m_Name: RangeDetector
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
