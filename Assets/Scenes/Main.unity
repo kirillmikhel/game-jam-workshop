@@ -416,31 +416,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1572354399, guid: 54002c35d726a4f77954843c961206f8, type: 3}
-      propertyPath: coinCollectClip
-      value: 
-      objectReference: {fileID: 8300000, guid: e39f97d8bec724403801d4eefd9de046, type: 3}
-    - target: {fileID: 1572354399, guid: 54002c35d726a4f77954843c961206f8, type: 3}
-      propertyPath: healthCollectClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8d350fbc3d1004a63b069eb6874bc587, type: 3}
-    - target: {fileID: 1572354399, guid: 54002c35d726a4f77954843c961206f8, type: 3}
-      propertyPath: hitCollectClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 858753b1599134568ad65341739e50bc, type: 3}
-    - target: {fileID: 1572354399, guid: 54002c35d726a4f77954843c961206f8, type: 3}
-      propertyPath: swingCollectClip
-      value: 
-      objectReference: {fileID: 8300000, guid: f328ad148cacf4d148e7f9c2e61d9567, type: 3}
     - target: {fileID: 580073353717184955, guid: 54002c35d726a4f77954843c961206f8,
         type: 3}
       propertyPath: m_Name
       value: Game Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 580073353717184955, guid: 54002c35d726a4f77954843c961206f8,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7152685295226962939, guid: 54002c35d726a4f77954843c961206f8,
         type: 3}

@@ -7,15 +7,15 @@ public class Collector : MonoBehaviour
     public void Collect(Collectable item)
     {
         var soundController = GameManager.Instance.GetComponent<SoundController>();
-        
+
         switch (item.type)
         {
             case CollectableType.Coin:
-                soundController.coinCollectSource.Play();
+                soundController.Play("Coin");
                 GetComponent<Inventory>().coins++;
                 break;
             case CollectableType.HealthKit:
-                soundController.healthCollectSource.Play();
+                soundController.Play("Health kit");
                 GetComponent<Health>().Increment();
                 break;
             default:

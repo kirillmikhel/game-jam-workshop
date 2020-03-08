@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     {
         HP = Mathf.Max(HP - damage, 0);
 
-        GameManager.Instance.GetComponent<SoundController>().hitCollectSource.Play();
+        GameManager.Instance.GetComponent<SoundController>().Play("Hit");
 
         if (HP > 0) return;
 

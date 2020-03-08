@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7152685295226962939
 Transform:
@@ -44,8 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b167f51455854d47bac31c887ce9d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  isGameOn: 0
 --- !u!114 &1572354399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,11 +56,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69e27f7dd9334d49a4cd96a430e764b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCollectClip: {fileID: 8300000, guid: e39f97d8bec724403801d4eefd9de046, type: 3}
-  healthCollectClip: {fileID: 8300000, guid: 8d350fbc3d1004a63b069eb6874bc587, type: 3}
-  hitCollectClip: {fileID: 8300000, guid: 858753b1599134568ad65341739e50bc, type: 3}
-  swingCollectClip: {fileID: 8300000, guid: f328ad148cacf4d148e7f9c2e61d9567, type: 3}
-  coinCollectSource: {fileID: 0}
-  healthCollectSource: {fileID: 0}
-  hitCollectSource: {fileID: 0}
-  swingCollectSource: {fileID: 0}
+  clips:
+  - name: Hit
+    clip: {fileID: 8300000, guid: 858753b1599134568ad65341739e50bc, type: 3}
+    loop: 0
+    playAwake: 1
+    volume: 0.5
+  - name: Swing
+    clip: {fileID: 8300000, guid: f328ad148cacf4d148e7f9c2e61d9567, type: 3}
+    loop: 0
+    playAwake: 0
+    volume: 0.5
+  - name: Stone hit
+    clip: {fileID: 8300000, guid: fad323d1d32604c768a94a5a3be1c4ec, type: 3}
+    loop: 0
+    playAwake: 0
+    volume: 0.5

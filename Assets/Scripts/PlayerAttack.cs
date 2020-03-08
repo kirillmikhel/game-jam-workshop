@@ -22,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (active) yield break;
 
-        GameManager.Instance.GetComponent<SoundController>().swingCollectSource.Play();
+        GameManager.Instance.GetComponent<SoundController>().Play("Swing");
 
         _animator.SetTrigger("Attack");
 
