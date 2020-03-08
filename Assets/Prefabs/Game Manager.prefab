@@ -63,7 +63,7 @@ MonoBehaviour:
     playAwake: 1
     volume: 0.5
   - name: Swing
-    clip: {fileID: 8300000, guid: f328ad148cacf4d148e7f9c2e61d9567, type: 3}
+    clip: {fileID: 8300000, guid: 71141b21cfdcb42daa84303bede1ec89, type: 3}
     loop: 0
     playAwake: 0
     volume: 0.5
@@ -71,4 +71,4 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: fad323d1d32604c768a94a5a3be1c4ec, type: 3}
     loop: 0
     playAwake: 0
-    volume: 0.5
+    volume: 0.3
