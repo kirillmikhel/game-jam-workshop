@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4047071161602265441}
   - component: {fileID: -5838856393410446650}
   - component: {fileID: 5292064013617052508}
+  - component: {fileID: -6524124514068645823}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -191,3 +192,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipName: Stone hit
+--- !u!114 &-6524124514068645823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159510740242678790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1f8dcd4b3d554fc8ad82bbc4f9001fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2989560920046929475, guid: f12089f8902194d3ab297b566c5cd334, type: 3}
