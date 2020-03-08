@@ -416,6 +416,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1572354399, guid: 54002c35d726a4f77954843c961206f8, type: 3}
+      propertyPath: clips.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 71141b21cfdcb42daa84303bede1ec89, type: 3}
+    - target: {fileID: 1572354399, guid: 54002c35d726a4f77954843c961206f8, type: 3}
+      propertyPath: clips.Array.data[2].volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 580073353717184955, guid: 54002c35d726a4f77954843c961206f8,
         type: 3}
       propertyPath: m_Name
