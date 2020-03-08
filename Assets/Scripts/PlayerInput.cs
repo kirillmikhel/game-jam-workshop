@@ -38,7 +38,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetAxisRaw("Attack") == 1)
         {
-            StartCoroutine(_playerAttack.DoAttack());
+            _playerAttack.DoAttack();
         }
     }
 }

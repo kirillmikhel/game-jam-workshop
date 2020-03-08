@@ -199,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   damage: 1
-  cooldown: 0.4
+  cooldown: 0.6
 --- !u!58 &4856221443751441667
 CircleCollider2D:
   m_ObjectHideFlags: 0
