@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerCoins : MonoBehaviour
 {
     public Sprite[] sprites;
-        
+
     private Image _image;
     private GameObject _player;
     private Inventory _playerInventory;

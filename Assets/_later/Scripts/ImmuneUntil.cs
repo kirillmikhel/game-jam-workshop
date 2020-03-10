@@ -7,7 +7,7 @@ public class ImmuneUntil : MonoBehaviour
     public float immunityTimeout = 1.0f;
 
     private float _timeLeft = 0;
-    
+
     // Start is called before the first frame update
     void Start()
     {
